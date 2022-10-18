@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <head>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Formularios</h1>
+        </header>
+
+        <!-- formularios -->
+        <!-- GET => ip:puerto/html?parametro=valor1?paramero2=valor2 -->
+        <!-- POST => ip:puerto/html -->
+        <form action="http://localhost:5555/formulario.html" method="POST" enctype="multipart/form-data">
+            <label for="txtNombre">Nombre</label>
+            <input type="text" name="nombre" maxlength="10" placeholder="inserte un nombre" value="" id="txtNombre">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="inserte un mail" id="email">
+
+            <!-- Opciones unicas/multiples) -->
+            <br>
+            <label>Mañana</label><input type="checkbox" name="tm" value="0">
+            <label>Tarde</label><input type="checkbox" name="tt" value="1">
+            <br>
+            <label>Seleccione solo uno:</label>
+            <input type="radio" name="r" value="r1">
+            <input type="radio" name="r" value="r2">
+            <br>
+            <!-- Selector de fechas -->
+            <input type="date" name="fecha">
+            <input type="datetime" name="fechaTime">
+            <input type="datetime-local" name="fechaTimeLocal">
+            <br>
+            <!-- Text Areas -->
+            <label>Texto libre</label>
+            <textarea rows="10" cols="20">dasdfaetwfdsafdsgrssertesdfvzfc</textarea>
+            <br>
+            <label>Numero</label>
+            <input type="number" name="edad" min="0" max="100">
+            <!-- Ficheros -->
+            <br>
+            <label>Seleccione un archivo</label>
+            <input type="file" name="fichero">
+            <!-- tpo TEXT con borrado -->
+            <br>
+            <label>Search:</label>
+            <input type="search">
+            <!-- tipo URL-->
+            <br>
+            <label>URL:</label>
+            <input type="url">
+            <!-- droplist-->
+            <br>
+            <label>DROPLIST:</label>
+            <select>
+                <option value="op1"> opcion 1</option>
+                <option value="op2"> opcion 2</option>
+                <option value="op3"> opcion 3</option>
+            </select>
+            <br>
+            <!-- boton para mandar la informacion -->
+            <input type="submit" value="Enviar"></form>
+    </body>
+    <main>
+
+    </main>
+</body>
+
+</html>

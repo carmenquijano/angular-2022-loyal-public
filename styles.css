@@ -1,0 +1,216 @@
+/* Definir clases*/
+
+
+/* aplica a los qe tienen class="texto25" */
+
+.texto25 {
+    font-size: 25px;
+    display: inline;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Aplica a los que tienen id=imagen */
+
+#imagen {
+    width: 100px;
+    border-radius: 30px 15px 10px;
+    border-color: blue;
+}
+
+#texto25Id {
+    font-size: 45px !important;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+/* Aplica a todas las etiquetas <img> */
+
+img {
+    width: 200px;
+    border-radius: 30px 15px 10px;
+}
+
+.caja1 {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 25px;
+    border: 5px solid red;
+    margin: 10px 20px;
+    /*10px arriba y abajo y 20px derecha e izq.*/
+    /* margin: 10px 20px 30px 40px;*/
+    /* 10px arriba, 20px derecha, 30px abajo y 40px izq. */
+}
+
+.caja2 img {
+    width: 50px;
+}
+
+div img#imgDiv {
+    width: 70px;
+}
+
+section>p {
+    color: blue;
+}
+
+
+/* Afecta a las <p> que van despues de un <h1> (solo a 1) */
+
+h1+p {
+    color: grey;
+}
+
+
+/* Afecta a todas las <p> que van despues de <h1> */
+
+article h1~p {
+    color: green;
+}
+
+section table>thead {
+    background-color: yellow;
+}
+
+section table>tbody {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Seudoclases */
+
+a:link {
+    color: cadetblue;
+    font-size: 30px;
+}
+
+a:visited {
+    color: blanchedalmond;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: darkgray;
+}
+
+
+/* nth */
+
+
+/* estos estilos se aplican en cascada, segun los ponas en el .css*/
+
+
+/* para la tbala tbl2*/
+
+#tbl2 tbody>tr:last-child {
+    background-color: blueviolet;
+    font-size: 35px;
+}
+
+#tbl2 tbody>tr:first-child {
+    background-color: aquamarine;
+    font-size: 35px;
+}
+
+
+/* a las filas pares*/
+
+#tbl2 tbody>tr:nth-child(odd) {
+    background-color: aquamarine;
+    color: white;
+    font-size: 35px;
+}
+
+
+/* a las filas impares*/
+
+#tbl2 tbody>tr:nth-child(even) {
+    background-color: blue;
+    color: white;
+    font-size: 35px;
+}
+
+#tbl3 tbody>tr:nth-child(2n +1) {
+    background-color: grey;
+    font-size: 25px;
+}
+
+.links {
+    list-style-type: lower-roman;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*
+
+@media only screen and (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.search {
+    background-color: blueviolet;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.search__menuLink {
+    display: flex;
+}
+
+.search__menuLink li {
+    color: red;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.search__menuLink li a {
+    font-size: 25px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.search__menuLink li a:hover {
+    color: blue
+}
+
+.search form>button {
+    color: aquamarine;
+    background-color: black;
+    width: 150px;
+}
