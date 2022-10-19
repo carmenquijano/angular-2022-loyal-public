@@ -1,216 +1,180 @@
-/* Definir clases*/
-
-
-/* aplica a los qe tienen class="texto25" */
-
+/*codigo css*/
+/*definir clases*/
 .texto25 {
     font-size: 25px;
     display: inline;
-    color: red;
+    color: blueviolet;
     font-weight: bold;
     font-style: italic;
 }
-
-
-/* Aplica a los que tienen id=imagen */
-
-#imagen {
-    width: 100px;
-    border-radius: 30px 15px 10px;
-    border-color: blue;
-}
-
-#texto25Id {
-    font-size: 45px !important;
+#text25Id {
+    font-size: 45px;
 }
 
 p {
-    font-size: 20px;
+    font-size: 25px !important;
 }
 
+#imagen {
+    width: 100px;
+    border-radius: 10px 20px 15px 30px;
+}
 
-/* Aplica a todas las etiquetas <img> */
-
+/*<img> es un selector*/
 img {
-    width: 200px;
-    border-radius: 30px 15px 10px;
+    width: 100px;
+    border-radius: 10px 20px 15px 30px; 
 }
 
 .caja1 {
-    width: 200px;
-    height: 100px;
+    border: 5px solid red;
+    font-size: 25px;
     margin: 10px;
     padding: 5px;
-    font-size: 25px;
-    border: 5px solid red;
-    margin: 10px 20px;
-    /*10px arriba y abajo y 20px derecha e izq.*/
-    /* margin: 10px 20px 30px 40px;*/
-    /* 10px arriba, 20px derecha, 30px abajo y 40px izq. */
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;/*defecto*/
 }
 
 .caja2 img {
     width: 50px;
 }
 
+div img {
+    width: 60px;
+}
+
 div img#imgDiv {
-    width: 70px;
+    width: 150px;
 }
 
-section>p {
-    color: blue;
+section > p {
+    color:blue
 }
 
-
-/* Afecta a las <p> que van despues de un <h1> (solo a 1) */
-
-h1+p {
-    color: grey;
+h1 + p {
+    color:green;
 }
 
-
-/* Afecta a todas las <p> que van despues de <h1> */
-
-article h1~p {
-    color: green;
+article h1 ~ p {
+    color:green;
 }
 
-section table>thead {
-    background-color: yellow;
-}
-
-section table>tbody {
-    background-color: red;
+section table > tbody {
+    background-color: aquamarine;
 }
 
 a {
     text-decoration: none;
 }
-
-
-/* Seudoclases */
-
 a:link {
-    color: cadetblue;
+    color: brown;   
     font-size: 30px;
 }
 
 a:visited {
-    color: blanchedalmond;
+    color: yellow;
 }
 
 a:hover {
-    color: brown;
+    color: rgba(168, 90, 45, 0.354);
 }
 
 a:active {
-    color: darkgray;
+    color: black;
 }
 
-
-/* nth */
-
-
-/* estos estilos se aplican en cascada, segun los ponas en el .css*/
-
-
-/* para la tbala tbl2*/
-
-#tbl2 tbody>tr:last-child {
-    background-color: blueviolet;
+/*nth?*/
+#tbl2 tbody tr:last-child {
     font-size: 35px;
 }
 
-#tbl2 tbody>tr:first-child {
-    background-color: aquamarine;
-    font-size: 35px;
+#tbl2 tbody tr:first-child {
+    font-size: 15px;
 }
 
-
-/* a las filas pares*/
-
-#tbl2 tbody>tr:nth-child(odd) {
-    background-color: aquamarine;
-    color: white;
-    font-size: 35px;
-}
-
-
-/* a las filas impares*/
-
-#tbl2 tbody>tr:nth-child(even) {
-    background-color: blue;
-    color: white;
-    font-size: 35px;
-}
-
-#tbl3 tbody>tr:nth-child(2n +1) {
-    background-color: grey;
+#tbl2 tbody tr:nth-child(odd) {
     font-size: 25px;
+    color: white;
+    background-color: blue;
+}
+
+#tbl2 tbody tr:nth-child(even) {
+    font-size: 25px;
+    color: white;
+    background-color: rgb(0, 238, 255);
+}
+
+#tbl3 tbody tr:nth-child(3n + 2) {
+    background-color: rgb(255, 136, 0);
 }
 
 .links {
-    list-style-type: lower-roman;
+    list-style-type: lower-roman ;
 }
 
 .container {
     display: flex;
-    justify-content: center;
-    justify-items: center;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
+    height: 500px;
+    border: 1px solid black;
+    align-items: flex-start;
 }
-
-
+.container img {
+    padding: 5px;
+    width: 150px;
+}
 /*
-
 @media only screen and (max-width: 500px) {
     .container {
         display: flex;
         flex-direction: column;
     }
 }
-
 */
-
 * {
     margin: 0px;
     padding: 0px;
 }
 
 .search {
-    background-color: blueviolet;
-    margin: 0px;
-    padding: 0px;
+    background-color: rgb(195, 215, 215);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
 }
+.search form > button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    height: 30px;
+}
 
+.search form > input#seach_text{
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid beige;
+}
 .search__menuLink {
     display: flex;
 }
 
 .search__menuLink li {
-    color: red;
+    color:red;
     font-size: 20px;
     list-style-type: none;
 }
 
-.search__menuLink li a {
+
+.search__menuLink li  a{
     font-size: 25px;
     color: black;
     text-transform: capitalize;
 }
 
-.search__menuLink li a:hover {
-    color: blue
-}
-
-.search form>button {
-    color: aquamarine;
-    background-color: black;
-    width: 150px;
+.search__menuLink li a:hover{
+    font-size: 27px;
+    color: rgb(0, 0, 0);
 }

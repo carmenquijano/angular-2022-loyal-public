@@ -1,3 +1,6 @@
-# angular-2022-loyal-public
-Primer fichero Readme.md 17/10/2022
-#Primer cambio: agrego texto
+# angular-2022-loyal
+curso angular 2022 / loyal-indra 32 hs.
+17/10 al 26/10
+#primer cambio: agrego texto
+#tercer cambio
+#segundo cambio
