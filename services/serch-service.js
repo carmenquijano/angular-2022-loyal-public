@@ -3,7 +3,6 @@ function filterSearch(key) {
     if (userInStorage) {
         let a = userInStorage.data.filter(user => user.email.includes(key) || user.first_name.includes(key) || user.last_name.includes(key));
         a.forEach(el => {
-
             const html = Users(el);
             document.getElementById('users').innerHTML = html;
         });
