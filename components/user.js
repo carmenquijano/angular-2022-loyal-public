@@ -1,10 +1,22 @@
 //objeto de js
+//new 
+/*
+function searchUser(page) {
+    //fetch(api) o axios(librria) o rxjs(angualr)
+    const endPoint = `https://reqres.in/api/users${page ? `?page=${page}` : ''}` ;
+    
+    //peticiones async
+    fetch(endPoint)
+        .then(response => response.json())
+        .then(data => Users(data));
+}
+*/
 /*
     "componente"
 */
 function Users(users) {
 
-    if (!users) {
+    if(!users) {
         return `
             <div class="row col-12">
                 <h1>No hay datos</h1>
